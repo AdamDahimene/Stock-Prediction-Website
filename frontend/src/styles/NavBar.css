@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap');
+
+#Navbar{
+    background-color: transparent;
+    color: blue;
+}
+
+.Header {
+    background-color: white;
+    color: blue;
+    padding: 1rem;
+    margin-bottom: 9rem;
+    box-shadow: 0 4px 8px 0 rgba(28, 41, 120, 0.2), 0 6px 20px 0 rgba(64, 33, 238, 0.19);
+    height: 3.5rem;
+}
+
+#links{
+    color: blue;
+}
+
+#Navbar-scroll {
+    background-color: white;
+}
+
+#navbar-brand {
+    color: rgba(38, 0, 255, 0.838);
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+    margin-left: -4.5rem;
+
+}
+
+#navbar-text {
+    color: lightgray;
+    margin-left: 4rem;
+    visibility: visible;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }

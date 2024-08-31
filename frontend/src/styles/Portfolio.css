@@ -1,0 +1,28 @@
+#space {
+    border-right: 1px solid black;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);  
+    width: 20%;
+    text-align: center;
+}
+
+.table-p {
+    margin-top: 2rem;
+    margin-left: -4rem;
+}
+
+#main-portfolio {
+    background-color: rgba(28, 41, 120, 0.2);
+    margin-top: -0.5rem;
+    margin-left: 6rem;
+    margin-right: -4rem;
+    margin-bottom: -6rem;
+    min-height: 89.6vh;
+}
+
+.table-pb {
+    margin-left: -4rem;
+}
+
+#title-p {
+    margin-left: -10rem;
+}

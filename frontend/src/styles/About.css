@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap');
+
+.page {
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-left: -4rem;
+  margin-right: -4rem;
+  margin-top: -4rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  color: greenyellow;
+}
+
+#title {
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 7rem;
+  text-decoration: none;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#description {
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  padding: 1rem;
+}
+
+#begin {
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+  background-color: greenyellow;
+  border: none;
+}
+
+#begin:hover {
+  background-color: green;
+  color: white;
+}
+
+#begin-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}

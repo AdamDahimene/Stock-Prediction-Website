@@ -1,0 +1,130 @@
+prediction_values.py:228: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+prediction_values.py:228: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+prediction_values.py:228: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+prediction_values.py:228: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+prediction_values.py:228: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+     Close
+221.270004
+221.720001
+224.720001
+226.050003
+225.889999
+226.509995
+226.399994
+224.529999
+226.839996
+227.179993
+228.029999
+226.490005
+229.789993
+229.000000
+133.851139
+134.292401
+134.711716
+135.081908
+135.501684
+135.876380
+136.176447
+     Close
+413.265137
+416.109985
+421.029999
+418.470001
+421.529999
+424.799988
+424.140015
+415.549988
+416.790009
+413.489990
+413.839996
+410.600006
+413.119995
+417.140015
+236.858844
+236.293846
+235.633198
+235.164858
+235.200674
+234.876723
+235.035917
+     Close
+164.160004
+160.369995
+161.300003
+162.960007
+166.669998
+167.179993
+165.850006
+163.800003
+165.619995
+166.160004
+164.679993
+162.850006
+161.779999
+163.380005
+133.674925
+133.842460
+134.013026
+134.244346
+134.466855
+134.647065
+134.735224
+     Close
+170.229996
+170.100006
+177.589996
+177.059998
+178.220001
+178.880005
+180.110001
+176.130005
+177.039993
+175.500000
+173.119995
+170.800003
+172.119995
+178.500000
+101.866547
+101.662104
+101.568048
+101.318399
+101.054837
+100.771023
+100.489696
+     Close
+207.830002
+201.380005
+214.139999
+216.119995
+222.720001
+221.100006
+223.270004
+210.660004
+220.320007
+213.210007
+209.210007
+205.750000
+206.279999
+214.110001
+239.744128
+239.837166
+239.822034
+239.505196
+239.089965
+239.003305
+239.129290

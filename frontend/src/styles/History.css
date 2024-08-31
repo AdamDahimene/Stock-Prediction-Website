@@ -1,0 +1,33 @@
+#margins {
+    border-right: 1px solid black;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);  
+    width: 16%;
+    text-align: center;
+    padding: 2rem 0;
+    
+}
+
+.table-h {
+    margin-top: 2rem;
+    margin-left: -4rem;
+}
+
+.cell-color {
+    background-color: rgba(28, 41, 120, 0.2);
+}
+
+#main-history {
+    background-color: rgba(28, 41, 120, 0.2);
+    margin-top: -0.5rem;
+    margin-left: 6rem;
+    margin-right: -4rem;
+    margin-bottom: -6rem;
+}
+
+.table-b {
+    margin-left: -4rem;
+}
+
+#title-h {
+    margin-left: -10rem;
+}

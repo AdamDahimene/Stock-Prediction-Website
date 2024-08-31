@@ -1,0 +1,46 @@
+#gap {
+    gap: 5rem;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(38, 0, 255, 0.838);
+}
+
+#modal-title {
+    color: rgba(38, 0, 255, 0.838);
+}
+
+#buy-button {
+    background-color: rgba(38, 0, 255, 0.838);
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+#buy-button:hover {
+    background-color: rgba(28, 41, 120, 0.2);
+    border: none;
+    color: black;
+}
+
+#sell-button {
+    background-color: rgba(38, 0, 255, 0.838);
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+#sell-button:hover {
+    background-color: rgba(28, 41, 120, 0.2);
+    border: none;
+    color: black;
+}

@@ -1,0 +1,51 @@
+#main-home {
+    background-color: rgba(28, 41, 120, 0.2);
+    margin-top: -0.5rem;
+    margin-left: 6rem;
+    margin-right: -4rem;
+    margin-bottom: -6rem;
+    min-height: 89.6vh;
+}
+
+#title-h {
+    margin-top: 2rem;
+    margin-left: -10rem;
+}
+
+#home-description {
+    margin-top: 2rem;
+    margin-left: -10rem;
+    margin-right: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(38, 0, 255, 0.838);
+}
+
+#api-button {
+    background-color: rgba(38, 0, 255, 0.838);
+    border: none;
+    width: 20rem;
+    height: 2.5rem;
+    margin: 1rem;
+    margin-left: 13rem;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+}
+
+#api-button:hover {
+    background-color: rgba(28, 41, 120, 0.2);
+    border: none;
+    color: black;
+}
+
+#api-group {
+    text-align: center;
+    margin-left: -10rem;
+    color: rgba(38, 0, 255, 0.838);
+
+}
+
+#box {
+    width: 20rem;
+    height: 4rem;
+}

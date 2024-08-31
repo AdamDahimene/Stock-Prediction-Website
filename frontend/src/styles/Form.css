@@ -1,0 +1,44 @@
+.page{
+    background-color: white;
+}
+
+.Form {
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+#field {
+    margin: 2rem;
+    margin-top: 1rem;
+}
+
+.buttonField {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+#button {
+    width: 100%;
+    padding: 0.7rem 20px;
+    
+}
+
+#forgot {
+    text-align: center;
+    margin-top: 1rem;
+}
