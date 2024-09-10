@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/Table';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import api from '../api';
 import "../styles/History.css";
 import Loading from '../components/Loading';
@@ -27,17 +28,13 @@ function History() {
                 const res = await api.get(url);
                 console.log(res.data[0]);
                 setData(res.data);
-                if (data === null) {
-                    setLoading(false);
-                    alert('No history found');
-                    Navigate('/home');
-                }
+                
 
                 setLoading(false);
                 
             } catch (error) {
-                Navigate('/home');
                 setLoading(false);
+                Navigate('/home');
                 
             }
 
