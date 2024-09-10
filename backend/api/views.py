@@ -58,17 +58,11 @@ class RequestPasswordReset(generics.GenericAPIView):
             #print(os.environ)
             #reset_url = f"{os.environ['http://127.0.0.1:8000/api/user/reset']}/{token}"
             subject = 'Update Password!'
-            message = 'Thank you for registering at our site.\n To reset your password, click on this link: http://localhost:5173/reset/' + token
+            message = 'Thank you for registering at our site.\n To reset your password, click on this link: https://5c68285b-cb55-468a-ba16-911dd241877c.e1-eu-north-azure.choreoapps.dev/reset/' + token
             from_email = 'johnrant253@gmail.com'
             recipient_list = [email]
         
             send_mail(subject, message, from_email, recipient_list, fail_silently=False)
-        
-            #return HttpResponse('Email has been sent!')
-
-
-            # Sending reset link via email (commented out for clarity)
-            # ... (email sending code)
 
             return Response({'We have sent you a link to reset your password'}, status=status.HTTP_200_OK)
         else:

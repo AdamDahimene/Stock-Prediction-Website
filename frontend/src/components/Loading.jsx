@@ -14,6 +14,7 @@ function Loading() {
                         <Col  xs={10} id="main">
                             <h2>Loading...</h2>
                             <p>Please wait while we load your data</p>
+                            <p>Should take 5 seconds if not please reload page</p>
                         </Col>
                     </Row>
                 </Container>

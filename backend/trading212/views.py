@@ -31,6 +31,7 @@ class UpdateApi(generics.UpdateAPIView):
 
     def update(self, request, *args, **kwargs):
         api_key_submitted = request.data.get('api_key')
+        print(api_key_submitted)
 
         url = "https://demo.trading212.com/api/v0/equity/account/cash"
 
@@ -42,11 +43,10 @@ class UpdateApi(generics.UpdateAPIView):
             data = response.json()
         except:
             return Response("null")
-
         
         account_id = request.data.get('account')
+        print(account_id)
         queryset = Connection.objects.filter(account=account_id).update(api_key=api_key_submitted)
-        print("hello")
         return Response({api_key_submitted})
            
     
@@ -190,16 +190,3 @@ class SpecificPositions(APIView):
         
         return Response(prices)
 
-'''
-class ImageViewSet(APIView):
-    #http_method_names = ['get', 'put']
-    queryset = FileResponse(open("./images/AAPL.png", 'rb'), content_type="image/png")
-    renderer_classes = [FileResponse]
-    serializer_class = ImageSerializer
-    pagination_class = None
-    permission_classes = [AllowAny]
-
-    def get(self, request, format=None):
-        response = FileResponse(open("./images/AAPL.png", 'rb'), content_type="image/png")
-        return response
-'''

@@ -18,14 +18,26 @@ function Home() {
     const navigate = useNavigate()
 
     const account = localStorage.getItem("user_id")
+    const previous_api_key = localStorage.getItem("api_key")
+    document.body.style.overflow = "auto";
+    console.log(account)
 
     const handleSubmit = async (e) => {
         setLoading(true)
         e.preventDefault()
 
         try {
-            const res = await api.put("/trading212/update/", {account: account, api_key: api_key})
+            if (previous_api_key === "" || previous_api_key === null || previous_api_key === "n") {
+                const res = await api.post("/trading212/register/", {account: account, api_key: api_key})
+                if (res.data === "null") {
+                    alert("API key not updated")
+                    setLoading(false)
 
+                    window.location.reload()
+                    return
+                }
+            }
+            const res = await api.put("/trading212/update/", {account: account, api_key: api_key})
             if (res.data === "null") {
                 alert("API key not updated")
                 setLoading(false)

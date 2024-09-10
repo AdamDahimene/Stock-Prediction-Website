@@ -8,7 +8,7 @@ function SideBar() {
     const apiKey = localStorage.getItem('api_key');
 
     const display = () => {
-        if (apiKey === "null" || apiKey === null || apiKey === "") {
+        if (apiKey === "null" || apiKey === null || apiKey === "" || apiKey === "n") {
             document.getElementById('sidebar-link-home').style.pointerEvents = 'none';
             document.getElementById('sidebar-link-home').style.cursor = 'default';
             document.getElementById('sidebar-link-home').style.color = 'grey';

@@ -13,7 +13,7 @@ function NavBar() {
     const visibility = () => {
         console.log("apiKey");
 
-        if (apiKey === "null" || apiKey === null || apiKey === "") {
+        if (apiKey === "null" || apiKey === null || apiKey === "" || apiKey === "n") {
             document.getElementById('navbar-text').style.visibility = 'hidden';
         } else {
             document.getElementById('navbar-text').style.visibility = 'visible';

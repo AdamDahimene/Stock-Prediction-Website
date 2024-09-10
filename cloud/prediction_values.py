@@ -224,7 +224,7 @@ for stock in stocks:
 
   # Predict for the next 7 days
   for _ in range(7):
-    # Convert the last sequence to a PyTorch tensor and move it to the device
+
     last_sequence_tensor = torch.tensor(last_sequence).float().to(device)
 
     # Predict the next day's closing price
@@ -260,67 +260,3 @@ for stock in stocks:
   all_data = all_data.reset_index()
 
   print(all_data[["Close"]].to_string(index=False))
-
-  # prompt: make all_data graph have tow different colors
-"""
-def plot_dataset(df, title):
-    data = []
-
-    # Historical data (first 14 days)
-    value1 = go.Scatter(
-        x=df.index[:14],
-        y=df.Close[:14],
-        mode="lines",
-        name="Actual Close (Last 14 Days)",
-        marker=dict(),
-        text=df.index[:14],
-        line=dict(color="blue"),  # Blue color for historical data
-    )
-    data.append(value1)
-
-    # Predicted data (next 7 days)
-    value2 = go.Scatter(
-        x=df.index[13:],
-        y=df.Close[13:],
-        mode="lines",
-        name="Predicted Close (Next 7 Days)",
-        marker=dict(),
-        text=df.index[13:],
-        line=dict(color="red"),  # Red color for predicted data
-    )
-    data.append(value2)
-
-    layout = dict(
-        #title=title,
-        xaxis=dict(title="Date", ticklen=5, zeroline=False),
-        yaxis=dict(title="Value", ticklen=5, zeroline=False),
-        shapes=[
-            {
-                'type': 'line',
-                'x0': 13,  # Start of the vertical line (adjust as needed)
-                'y0': min(df['Close']),  # Bottom of the line
-                'x1': 13,  # End of the vertical line
-                'y1': max(df['Close']),  # Top of the line
-                'line': {
-                    'color': 'black',
-                    'dash': 'dash',
-                }
-            }
-        ]
-
-    )
-
-    fig = go.Figure(data=data, layout=layout)
-
-    fig.update_layout(
-    margin=dict(l=20, r=10, t=0, b=20),
-    )
-    iplot(fig)
-
-    return fig
-
-graph = plot_dataset(all_data, "Tesla Predicted Price")
-#graph.write_html("file.html")
-
-graph.write_image("file.png")
-"""
